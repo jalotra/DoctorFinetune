@@ -113,17 +113,17 @@ class DataLoader:
 		for line in charlist.readlines():
 			for i in range(len(line)):
 				chars.add(line[i])
-		print(chars)
+		# print(chars)
 
-		print("SAMPLES_LEN : ", len(self.samples))
+		# print("SAMPLES_LEN : ", len(self.samples))
 		# Shuffle the samples 
 		random.shuffle(self.samples)
 
 		# split into training and validation set: 90% - 10%
-		splitIdx = int(0.90 * len(self.samples))
-		print(splitIdx)
-		self.trainSamples = self.samples[:splitIdx]
-		self.validationSamples = self.samples[splitIdx:]
+		self.splitIdx = int(0.90* len(self.samples))
+		# print(splitIdx)
+		self.trainSamples = self.samples
+		self.validationSamples = self.samples
 		# self.testSamples = self.samples[splitIdx+test_set_examples : ]
 		# put words into lists
 		self.trainWords = [x.gtText for x in self.trainSamples]
@@ -131,7 +131,7 @@ class DataLoader:
 		# self.testWords = [x.gtText for x in self.testSamples]
 
 		# number of randomly chosen samples per epoch for training 
-		self.numTrainSamplesPerEpoch = int(len(self.samples)*0.40)
+		self.numTrainSamplesPerEpoch = int(len(self.samples)*0.30)
 		
 		# start with train set
 		self.trainSet()
@@ -182,12 +182,7 @@ class DataLoader:
 		"switch to validation set"
 		self.dataAugmentation = False
 		self.currIdx = 0
-		self.samples = self.validationSamples
-
-	# def testSet(self):
-	# 	self.dataAugmentation = False
-	# 	self.currIdx = 0
-	# 	self.samples = self.testSamples
+		self.samples = self.validationSamples[:self.splitIdx]
 
 
 	def getIteratorInfo(self):
@@ -209,7 +204,8 @@ class DataLoader:
 		return Batch(gtTexts, imgs)
 
 if __name__ == "__main__":
-	loader = DataLoader(FilePaths.fnTrain, 64, (128, 32), 32)
-	print(len(loader.samples))
-	for i in range(len(loader.samples)):
-		print(loader.samples[i].filePath, " ", loader.samples[i].gtText)
+	loader = DataLoader(FilePaths.fnTrain, 32, (128, 32), 32)
+	# print(len(loader.samples))
+	# for i in range(len(loader.validationSamples)):
+	# 	print(loader.validationSamples[i].filePath,  loader.validationSamples[i].gtText)	
+	print(len(loader.validationSamples))
