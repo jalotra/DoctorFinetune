@@ -442,7 +442,7 @@ img_450.jpg synlogical
 img_451.jpg CaCELLO
 img_452.jpg CtScan
 img_454.jpg EyeAtm
-img_455.jpg BP=110/70
+img_455.jpg BP-110/70
 img_456.jpg Rx
 img_457.jpg Pu
 img_458.jpg CVCRX
