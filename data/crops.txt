@@ -1,6 +1,6 @@
 img_0.jpg 4
 img_1.jpg C/O
-img_2.jpg Lp|
+img_2.jpg Lp/
 img_3.jpg 30ml
 img_4.jpg DV
 img_5.jpg Hypoluipradeu
@@ -13,7 +13,7 @@ img_11.jpg Warm
 img_12.jpg CBC
 img_13.jpg EBS
 img_14.jpg RBunw
-img_15.jpg o|o|o
+img_15.jpg o/o/o
 img_16.jpg NV
 img_17.jpg F2horiCoxib
 img_18.jpg Paihije
@@ -179,7 +179,7 @@ img_177.jpg IV
 img_178.jpg Tab
 img_179.jpg tqanexa
 img_180.jpg (15)
-img_181.jpg  0|0|0
+img_181.jpg  0/0/0
 img_183.jpg Tab
 img_184.jpg pantop
 img_185.jpg Clo
@@ -353,7 +353,7 @@ img_356.jpg 1tubeon-(10)dx
 img_357.jpg  Rx
 img_358.jpg Tab
 img_359.jpg Arithromicin 
-img_360.jpg C|O
+img_360.jpg C/O
 img_361.jpg Mont+LC2
 img_362.jpg PCM 
 img_363.jpg Carry
@@ -375,7 +375,7 @@ img_380.jpg Tab
 img_381.jpg Flemdet 
 img_382.jpg Painin(Lf)lowerabdomen
 img_383.jpg -2BD-4
-img_384.jpg O|O
+img_384.jpg O/O
 img_385.jpg Tab Levtab
 img_386.jpg M-10)
 img_387.jpg x10d
@@ -429,7 +429,7 @@ img_435.jpg Chest
 img_436.jpg OccipsiTril
 img_438.jpg Th Pcm(5W)
 img_440.jpg cefimine(2u0)
-img_441.jpg o|o
+img_441.jpg o/o
 img_442.jpg 1xZx5
 img_443.jpg Th
 img_444.jpg Th
@@ -447,7 +447,7 @@ img_456.jpg Rx
 img_457.jpg Pu
 img_458.jpg CVCRX
 img_459.jpg Lens-Catavactous
-img_460.jpg BP150|1000mmHg
+img_460.jpg BP150/1000mmHg
 img_461.jpg dmcnd
 img_462.jpg 40T50
 img_463.jpg LE
