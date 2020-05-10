@@ -82,8 +82,11 @@ def validate(model, loader):
 			print('[OK]' if dist==0 else '[ERR:%d]' % dist,'"' + batch.gtTexts[i] + '"', '->', '"' + recognized[i] + '"')
 	
 	# print validation result
-	charErrorRate = numCharErr / numCharTotal
-	wordAccuracy = numWordOK / numWordTotal
+	try :
+		charErrorRate = numCharErr / numCharTotal
+		wordAccuracy = numWordOK / numWordTotal
+	except ZeroDivisionError as e:
+		print(e)
 	print('Character error rate: %f%%. Word accuracy: %f%%.' % (charErrorRate*100.0, wordAccuracy*100.0))
 	return charErrorRate
 
