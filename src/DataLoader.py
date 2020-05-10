@@ -106,7 +106,8 @@ class DataLoader:
 			gtText = self.truncateLabel(str(line.strip().split(" ")[1]), maxTextLen)
 			# remove unwanted chars
 			gtText = self.change_cvl_database_chars(gtText)
-			self.samples.append(Sample(gtText, fileName))
+			if(len(gtText) > 0):
+				self.samples.append(Sample(gtText, fileName))
 
 		charlist = open("../model/charlist.txt", "r")
 		for line in charlist.readlines():
@@ -210,3 +211,5 @@ class DataLoader:
 if __name__ == "__main__":
 	loader = DataLoader(FilePaths.fnTrain, 64, (128, 32), 32)
 	print(len(loader.samples))
+	for i in range(len(loader.samples)):
+		print(loader.samples[i].filePath, " ", loader.samples[i].gtText)
