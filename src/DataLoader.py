@@ -182,7 +182,8 @@ class DataLoader:
 		"switch to validation set"
 		self.dataAugmentation = False
 		self.currIdx = 0
-		self.samples = self.validationSamples[:self.splitIdx]
+		random.shuffle(self.validationSamples)
+		self.samples = self.validationSamples[self.splitIdx:]
 
 
 	def getIteratorInfo(self):
