@@ -7,7 +7,7 @@ img_5.jpg Hypoluipradeu
 img_6.jpg H/O
 img_7.jpg CBC
 img_8.jpg SaumT3,T4
-img_9.jpg Pold ho
+img_9.jpg Poldho
 img_10.jpg ENT
 img_11.jpg Warm
 img_12.jpg CBC
@@ -345,12 +345,12 @@ img_348.jpg leftear
 img_349.jpg RiskFactor
 img_350.jpg RuledOf
 img_351.jpg T:Aspirin+Cloplyl
-img_352.jpg  Rx
+img_352.jpg Rx
 img_353.jpg andeueun
 img_354.jpg Caisolbgn
 img_355.jpg TCautopramel(40)
 img_356.jpg 1tubeon-(10)dx
-img_357.jpg  Rx
+img_357.jpg Rx
 img_358.jpg Tab
 img_359.jpg Arithromicin 
 img_360.jpg C/O
@@ -363,7 +363,7 @@ img_367.jpg Heu,
 img_368.jpg HBSAf
 img_369.jpg FBS
 img_370.jpg 2hPPBS
-img_371.jpg  HIN0
+img_371.jpg HIN0
 img_373.jpg comdr
 img_374.jpg FBS
 img_375.jpg MUXIFIXuCin
